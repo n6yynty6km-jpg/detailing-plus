@@ -1,0 +1,373 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Detailing+ | Профессиональный уход за автомобилем</title>
+
+    <meta name="description"
+          content="Профессиональный детейлинг автомобилей в Улан-Удэ. Химчистка, полировка и защита кузова.">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
+          rel="stylesheet">
+</head>
+
+<body>
+
+<header class="header">
+    <div class="container header-inner">
+
+        <a href="#" class="logo">
+            DETAILING<span>+</span>
+        </a>
+
+        <nav class="navigation">
+            <a href="#services">Услуги</a>
+            <a href="#about">О нас</a>
+            <a href="#works">Наши работы</a>
+            <a href="#contacts">Контакты</a>
+        </nav>
+
+        <a href="#booking" class="header-button">
+            Записаться
+        </a>
+
+    </div>
+</header>
+
+
+<main>
+
+    <section class="hero">
+
+        <div class="hero-overlay"></div>
+
+        <div class="container hero-content">
+
+            <span class="hero-label">
+                DETAILING STUDIO · УЛАН-УДЭ
+            </span>
+
+            <h1>
+                ИСКУССТВО<br>
+                БЕЗУПРЕЧНОГО<br>
+                <span>УХОДА</span> ЗА АВТОМОБИЛЕМ
+            </h1>
+
+            <p class="hero-description">
+                Профессиональный детейлинг, внимание к деталям
+                и безупречный результат для вашего автомобиля.
+            </p>
+
+            <div class="hero-actions">
+
+                <a href="#booking" class="primary-button">
+                    Записаться на услугу
+                    <span>↗</span>
+                </a>
+
+                <a href="#services" class="secondary-button">
+                    Наши услуги
+                </a>
+
+            </div>
+
+            <div class="hero-bottom">
+                <span>КАЧЕСТВО В КАЖДОЙ ДЕТАЛИ</span>
+                <span>01 / 04</span>
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+<section class="services section" id="services">
+    <div class="container">
+
+        <div class="section-heading">
+            <div>
+                <span class="eyebrow">ЧТО МЫ ПРЕДЛАГАЕМ</span>
+                <h2>Наши услуги</h2>
+            </div>
+            <p>Профессиональный уход за автомобилем на каждом этапе.</p>
+        </div>
+
+        <div class="services-grid">
+
+            <article class="service-card">
+                <div class="service-image image-wash"></div>
+                <div class="service-info">
+                    <span>01 / УХОД ЗА КУЗОВОМ</span>
+                    <h3>Мойка кузова</h3>
+                    <p>Бережное очищение и уход за внешней поверхностью автомобиля.</p>
+                    <button class="service-select" data-service="wash">
+                        Рассчитать стоимость ↗
+                    </button>
+                </div>
+            </article>
+
+            <article class="service-card">
+                <div class="service-image image-interior"></div>
+                <div class="service-info">
+                    <span>02 / УХОД ЗА САЛОНОМ</span>
+                    <h3>Химчистка салона</h3>
+                    <p>Глубокая очистка материалов и труднодоступных участков.</p>
+                    <button class="service-select" data-service="cleaning">
+                        Рассчитать стоимость ↗
+                    </button>
+                </div>
+            </article>
+
+            <article class="service-card">
+                <div class="service-image image-polish"></div>
+                <div class="service-info">
+                    <span>03 / ВОССТАНОВЛЕНИЕ</span>
+                    <h3>Полировка кузова</h3>
+                    <p>Восстановление блеска и улучшение внешнего вида автомобиля.</p>
+                    <button class="service-select" data-service="polishing">
+                        Рассчитать стоимость ↗
+                    </button>
+                </div>
+            </article>
+
+            <article class="service-card">
+                <div class="service-image image-coating"></div>
+                <div class="service-info">
+                    <span>04 / ЗАЩИТА</span>
+                    <h3>Защитные покрытия</h3>
+                    <p>Дополнительная защита лакокрасочного покрытия.</p>
+                    <button class="service-select" data-service="coating">
+                        Рассчитать стоимость ↗
+                    </button>
+                </div>
+            </article>
+
+        </div>
+    </div>
+</section>
+
+
+<section class="calculator section" id="calculator">
+    <div class="container calculator-inner">
+
+        <div class="calculator-heading">
+            <span class="eyebrow">ПРЕДВАРИТЕЛЬНЫЙ РАСЧЁТ</span>
+            <h2>Узнайте стоимость ухода за автомобилем</h2>
+            <p>Выберите услугу и размер автомобиля.</p>
+        </div>
+
+        <div class="calculator-card">
+
+            <div class="calculator-field">
+                <label for="service">Выберите услугу</label>
+                <select id="service">
+                    <option value="wash">Мойка кузова</option>
+                    <option value="cleaning">Химчистка салона</option>
+                    <option value="polishing">Полировка кузова</option>
+                    <option value="coating">Защитное покрытие</option>
+                </select>
+            </div>
+
+            <div class="calculator-field">
+                <label for="car-size">Размер автомобиля</label>
+                <select id="car-size">
+                    <option value="small">Маленький</option>
+                    <option value="medium" selected>Средний</option>
+                    <option value="large">Большой</option>
+                </select>
+            </div>
+
+            <div class="calculator-result">
+                <span>Предварительная стоимость</span>
+                <strong id="price">6 500 ₽</strong>
+            </div>
+
+            <p class="calculator-note">
+                Стоимость демонстрационная. Итоговая цена
+                уточняется после оценки автомобиля мастером.
+            </p>
+
+            <a href="#booking" class="primary-button">
+                Перейти к записи ↗
+            </a>
+
+        </div>
+    </div>
+</section>
+
+
+
+    <section class="about section" id="about">
+        <div class="container">
+            <span class="eyebrow">DETAILING+</span>
+            <h2>Ваш автомобиль заслуживает большего.</h2>
+            <p>Профессиональный подход к уходу за автомобилем.</p>
+        </div>
+    </section>
+
+
+    <section class="works section" id="works">
+        <div class="container">
+            <span class="eyebrow">НАШИ РАБОТЫ</span>
+            <h2>Результат говорит сам за себя.</h2>
+            <p>Здесь разместим реальные фотографии работ студии.</p>
+        </div>
+    </section>
+
+
+
+<section class="booking section" id="booking">
+    <div class="container">
+
+        <span class="eyebrow">ОНЛАЙН-ЗАПИСЬ</span>
+        <h2>Время позаботиться о вашем автомобиле.</h2>
+        <p class="booking-description">
+            Выберите услугу и удобное время. Мы получим вашу заявку
+            и свяжемся с вами для подтверждения записи.
+        </p>
+
+        <form class="booking-form" id="booking-form">
+
+            <div class="booking-fields">
+
+                <div class="calculator-field">
+                    <label for="client-name">Ваше имя</label>
+                    <input
+                        type="text"
+                        id="client-name"
+                        name="client_name"
+                        placeholder="Например, Александр"
+                        minlength="2"
+                        maxlength="100"
+                        required
+                    >
+                </div>
+
+                <div class="calculator-field">
+                    <label for="client-phone">Номер телефона</label>
+                    <input
+                        type="tel"
+                        id="client-phone"
+                        name="client_phone"
+                        placeholder="+7 (___) ___-__-__"
+                        minlength="5"
+                        maxlength="30"
+                        required
+                    >
+                </div>
+
+                <div class="calculator-field">
+                    <label for="booking-service">Услуга</label>
+                    <select id="booking-service" name="service_code" required>
+                        <option value="wash">Мойка кузова</option>
+                        <option value="cleaning">Химчистка салона</option>
+                        <option value="polishing">Полировка кузова</option>
+                        <option value="coating">Защитные покрытия</option>
+                    </select>
+                </div>
+
+                <div class="calculator-field">
+                    <label for="booking-car-size">Размер автомобиля</label>
+                    <select id="booking-car-size" name="car_size" required>
+                        <option value="small">Маленький</option>
+                        <option value="medium" selected>Средний</option>
+                        <option value="large">Большой</option>
+                    </select>
+                </div>
+
+                <div class="calculator-field">
+                    <label for="car-brand">Марка автомобиля</label>
+                    <input
+                        type="text"
+                        id="car-brand"
+                        name="car_brand"
+                        placeholder="Например, Toyota"
+                        maxlength="100"
+                        required
+                    >
+                </div>
+
+                <div class="calculator-field">
+                    <label for="car-model">Модель автомобиля</label>
+                    <input
+                        type="text"
+                        id="car-model"
+                        name="car_model"
+                        placeholder="Например, Camry"
+                        maxlength="100"
+                        required
+                    >
+                </div>
+
+                <div class="calculator-field">
+                    <label for="booking-date">Дата записи</label>
+                    <input
+                        type="date"
+                        id="booking-date"
+                        name="appointment_date"
+                        required
+                    >
+                </div>
+
+                <div class="calculator-field">
+                    <label for="booking-time">Свободное время</label>
+                    <select id="booking-time" name="start_time" required disabled>
+                        <option value="">Сначала выберите дату</option>
+                    </select>
+                </div>
+
+            </div>
+
+            <div class="calculator-field booking-comment">
+                <label for="booking-comment">Комментарий (необязательно)</label>
+                <textarea
+                    id="booking-comment"
+                    name="comment"
+                    rows="4"
+                    placeholder="Дополнительная информация об автомобиле или пожелания..."
+                ></textarea>
+            </div>
+
+            <p class="booking-note">
+                Отправка заявки не означает автоматического подтверждения записи.
+                Мы свяжемся с вами для уточнения деталей.
+            </p>
+
+            <button type="submit" class="primary-button booking-submit">
+                Отправить заявку ↗
+            </button>
+
+            <p id="booking-message" class="booking-message" role="status"></p>
+
+        </form>
+
+    </div>
+</section>
+
+
+
+</main>
+
+
+<footer class="footer" id="contacts">
+    <div class="container footer-inner">
+        <a href="#" class="logo">DETAILING<span>+</span></a>
+        <p>Улан-Удэ · Профессиональный детейлинг</p>
+        <span>© 2026 Detailing+</span>
+    </div>
+</footer>
+
+
+<script src="js/script.js"></script>
+
+</body>
+</html>

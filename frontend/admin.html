@@ -1,0 +1,101 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Администрирование | Detailing+</title>
+
+    <link rel="stylesheet" href="css/admin.css">
+</head>
+
+<body>
+
+<header class="admin-header">
+    <a href="/" class="admin-logo">DETAILING<span>+</span></a>
+    <span>Панель управления</span>
+</header>
+
+<main class="admin-container">
+
+    <section class="login-card" id="login-section">
+        <h1>Вход в панель</h1>
+        <p>Введите данные администратора.</p>
+
+        <form id="login-form">
+            <label for="username">Логин</label>
+            <input id="username" type="text" required>
+
+            <label for="password">Пароль</label>
+            <input id="password" type="password" required>
+
+            <button type="submit">Войти</button>
+
+            <p id="login-message" class="message"></p>
+        </form>
+    </section>
+
+    <section id="dashboard" hidden>
+
+        <div class="dashboard-heading">
+            <div>
+                <span class="eyebrow">DETAILING+</span>
+                <h1>Заявки клиентов</h1>
+            </div>
+
+            <button id="logout-button" class="secondary-button">
+                Выйти
+            </button>
+        </div>
+
+        <p id="dashboard-message" class="message"></p>
+
+        <div class="table-wrapper">
+            <table>
+                <thead>
+                    <tr>
+                        <th>№</th>
+                        <th>Клиент</th>
+                        <th>Автомобиль</th>
+                        <th>Услуга</th>
+                        <th>Дата и время</th>
+                        <th>Стоимость</th>
+                        <th>Статус</th>
+                    </tr>
+                </thead>
+
+                <tbody id="appointments-table"></tbody>
+            </table>
+        </div>
+
+
+<section class="services-management">
+
+    <div class="dashboard-heading">
+        <div>
+            <span class="eyebrow">НАСТРОЙКИ БИЗНЕСА</span>
+            <h2>Услуги и цены</h2>
+        </div>
+    </div>
+
+    <p class="section-description">
+        Изменяйте стоимость и продолжительность услуг.
+        Изменения будут использоваться на сайте при новых расчётах и записях.
+    </p>
+
+    <div id="services-list" class="services-list">
+        <p>Загружаем услуги...</p>
+    </div>
+
+</section>
+
+
+    </section>
+
+</main>
+
+<script src="js/admin.js"></script>
+
+</body>
+</html>
